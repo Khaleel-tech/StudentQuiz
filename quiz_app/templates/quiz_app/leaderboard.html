@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block title %}Leaderboard | Student Interactive System{% endblock %}
+{% block content %}
+<h2 class="fw-bold mb-4">Top 10 Performers</h2>
+<div class="card p-3">
+    <ol class="list-group list-group-numbered">
+        {% for leader in leaders %}
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+            <span>{{ leader.username }}</span>
+            <span class="badge bg-primary rounded-pill">{{ leader.best_percentage|floatformat:2 }}%</span>
+        </li>
+        {% empty %}
+        <li class="list-group-item">No scores yet.</li>
+        {% endfor %}
+    </ol>
+</div>
+{% endblock %}

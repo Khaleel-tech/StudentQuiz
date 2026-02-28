@@ -1,0 +1,48 @@
+body {
+    background: linear-gradient(135deg, #eef2ff, #f8fbff);
+    min-height: 100vh;
+}
+
+.hero-card {
+    background: linear-gradient(120deg, #1d4ed8, #3b82f6);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.glass-card,
+.result-card,
+.card {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 1rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.question-card {
+    transition: transform 0.2s ease;
+}
+
+.question-card:hover {
+    transform: translateY(-3px);
+}
+
+.chat-box {
+    height: 320px;
+    overflow-y: auto;
+    border: 1px solid #dbeafe;
+    border-radius: 0.8rem;
+    background-color: #ffffff;
+    padding: 1rem;
+}
+
+.chat-message {
+    margin-bottom: 0.75rem;
+    padding: 0.6rem 0.75rem;
+    border-radius: 0.6rem;
+}
+
+.user-message {
+    background: #dbeafe;
+}
+
+.bot-message {
+    background: #ede9fe;
+}

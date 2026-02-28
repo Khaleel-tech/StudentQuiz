@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block title %}Home | Student Interactive System{% endblock %}
+{% block content %}
+<section class="hero-card p-5 rounded-4 text-white">
+    <h1 class="display-5 fw-bold">Welcome to Student Interactive System</h1>
+    <p class="lead">Sharpen your knowledge with adaptive quizzes, monitor your progress, and get instant study support.</p>
+    <div class="d-flex gap-3 flex-wrap">
+        <a href="{% url 'quiz' %}" class="btn btn-light btn-lg">Start Quiz</a>
+        <a href="{% url 'chatbot' %}" class="btn btn-outline-light btn-lg">Ask Chatbot</a>
+    </div>
+</section>
+{% endblock %}
