@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Study Chatbot | Student Interactive System{% endblock %}
+{% block content %}
+<h2 class="fw-bold mb-4">Study Help Chatbot</h2>
+<div class="card p-4">
+    <div id="chatBox" class="chat-box mb-3"></div>
+    <div class="input-group">
+        <input type="text" id="chatInput" class="form-control" placeholder="Ask about python, oop, machine learning...">
+        <button class="btn btn-primary" id="sendBtn">Send</button>
+    </div>
+</div>
+{% endblock %}
+{% block scripts %}
+<script src="{% static 'quiz_app/js/chatbot.js' %}"></script>
+{% endblock %}
